@@ -7,6 +7,23 @@
     <title>Ejercicio 1</title>
 </head>
 <body>
-    
+    <form action="Procesar noticia.php" method="POST" enctype="multipart/form-data">
+        <label for="titulo">Título: </label>
+        <input type="text" id="titulo" name="titulo">
+        <br><br>
+        <label for="cuerpo">Cuerpo de la noticia: </label>
+        <input type="text" id="cuerpo" name="cuerpo">
+        <br><br>
+        <label for="categoria">Categoria: </label>
+        <input type="text" id="categoria" name="categoria">
+        <br><br>
+        <label for="imagen">Imagen: </label>
+        <input type="file" id="imagen" name="imagen" required>
+        <br><br>
+        <label for="autor">Autor de la noticia: </label>
+        <input type="text" id="autor" name="autor">
+        <br><br>
+        <input type="submit" value="Subir noticia">
+    </form>
 </body>
 </html>
